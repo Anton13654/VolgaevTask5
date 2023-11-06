@@ -27,6 +27,9 @@ class MainFragment : Fragment(R.layout.fragment_main) {
                 .addToBackStack(null)
                 .commit()
         }
+        binding.steckButton.setOnClickListener {
+            fragmentManager.popBackStackImmediate()
+        }
         binding.secondButton.setOnClickListener {
             val fragment = SecondFragment()
             fragmentManager.beginTransaction()

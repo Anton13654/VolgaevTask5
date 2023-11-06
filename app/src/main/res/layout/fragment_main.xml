@@ -21,11 +21,12 @@
         android:layout_width="418dp"
         android:layout_height="68dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintBottom_toBottomOf="@id/steck_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.97">
+        app:layout_constraintVertical_bias="0.87">
 
         <Button
             android:id="@+id/first_button"
@@ -51,4 +52,15 @@
             android:layout_weight="1"
             android:text="3" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/steck_button"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:text="Открыть предудущий фрагмент из стека"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/personal_container"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
